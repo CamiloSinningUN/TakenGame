@@ -18,15 +18,15 @@
     rgba(222, 171, 160, 0.5) -11.61%,
     rgba(69, 66, 217, 0.2) 105.59%
   );
-  @apply w-16 aspect-square my-3 rounded-2xl mr-4 flex items-center justify-center;
+  @apply w-10 aspect-square my-3 rounded-lg mr-4 flex items-center justify-center;
 }
 
 .instruction {
-  @apply text-white font-Fredoka font-thin text-xl w-[327px] my-auto;
+  @apply text-white font-Fredoka font-thin text-sm w-[220px] my-auto;
 }
 
 .title {
-  @apply text-4xl text-center text-white my-5 font-Fredoka_One;
+  @apply text-xl text-center text-white my-5 font-Fredoka_One;
 }
 
 .logo {
@@ -69,7 +69,7 @@
 }
 
 .ficha-ejemplo {
-  @apply bg-[#52D053] w-16 aspect-square rounded-md flex justify-center items-center text-white text-3xl;
+  @apply bg-[#52D053] w-12 aspect-square rounded-md flex justify-center items-center text-white text-xl;
 }
 
 .innerBox {
