@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Fredoka One";
+  src: url("../fonts/Fredoka_One/FredokaOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Fredoka";
+  src: url("../fonts/Fredoka/static/Fredoka/Fredoka-Light.ttf");
+}
+
+.instBox {
+  background: linear-gradient(
+    136.83deg,
+    rgba(222, 171, 160, 0.5) -11.61%,
+    rgba(69, 66, 217, 0.2) 105.59%
+  );
+  @apply w-16 aspect-square my-3 rounded-2xl mr-4 flex items-center justify-center;
+}
+
+.instruction {
+  @apply text-white font-Fredoka font-thin text-xl w-[327px] my-auto;
+}
+
+.title {
+  @apply text-4xl text-center text-white my-5 font-Fredoka_One;
+}
+
+.logo {
+  background: radial-gradient(
+    91.89% 59.09% at 50% 40.91%,
+    #ef7474 0%,
+    rgba(219, 0, 255, 0.4) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg-moon {
+  background: radial-gradient(
+    77.73% 77.73% at 77.85% 83.5%,
+    #b4047e 0%,
+    #313979 24.1%,
+    rgba(180, 4, 126, 0.1) 100%
+  );
+}
+
+.glass-card {
+  background: linear-gradient(
+    136.7deg,
+    rgba(217, 217, 217, 0.3) -8.01%,
+    rgba(217, 217, 217, 0.1) 93.95%
+  );
+  box-shadow: 0px 4.78261px 4.78261px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(23.913px);
+  border-radius: 29.8913px;
+  border: 1.2px solid;
+
+  border-image-source: linear-gradient(
+    125deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+
+.ficha-ejemplo {
+  @apply bg-[#52D053] w-16 aspect-square rounded-md flex justify-center items-center text-white text-3xl;
+}
+
+.innerBox {
+  background: linear-gradient(
+    314.14deg,
+    rgba(255, 255, 255, 0.2) 1.71%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: inset 0px 0px 3px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
