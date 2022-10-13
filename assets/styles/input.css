@@ -106,3 +106,12 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(20px);
 }
+
+.win {
+  background: linear-gradient(
+    135.92deg,
+    rgba(0, 0, 0, 0.7) -3.75%,
+    rgba(0, 0, 0, 0.35) 98.28%
+  );
+  border-radius: 15px;
+}

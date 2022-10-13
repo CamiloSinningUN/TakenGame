@@ -96,6 +96,12 @@
         </div>
       </div>
       <div class="glass-card p-8">
+        <div
+          class="win w-[298px] h-[298px] absolute z-10 bg-black items-center flex justify-center invisible"
+          id="win"
+        >
+          <h2 class="text-6xl font-Fredoka_One text-white">Ganaste</h2>
+        </div>
         <div class="innerBox p-2 flex gap-2 w-[298px] flex-wrap">
           <div class="ficha" id="1"><p>1</p></div>
           <div class="ficha" id="2"><p>2</p></div>
@@ -134,6 +140,13 @@
       class="fixed bottom-0 right-0 w-[35vw] h-auto -z-10"
       src="./assets/imgs/Moon.png"
       alt=""
+    />
+    <audio id="ostmoon" loop src="./assets/sounds/flymetothemoon.mp3"></audio>
+    <img
+      class="absolute bottom-1 right-5 w-8 hover:cursor-pointer hover:opacity-70 active:opoaity-50"
+      src="./assets/imgs/noaudio.png"
+      alt=""
+      id="volume"
     />
   </body>
   <script src="./assets/scripts/takenLogic.js"></script>
