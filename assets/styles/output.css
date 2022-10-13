@@ -587,24 +587,12 @@ video {
   right: 0px;
 }
 
-.-bottom-10 {
-  bottom: -2.5rem;
-}
-
-.bottom-5 {
-  bottom: 1.25rem;
+.bottom-1 {
+  bottom: 0.25rem;
 }
 
 .right-5 {
   right: 1.25rem;
-}
-
-.bottom-4 {
-  bottom: 1rem;
-}
-
-.bottom-1 {
-  bottom: 0.25rem;
 }
 
 .-z-20 {
@@ -681,10 +669,6 @@ video {
   width: 35vw;
 }
 
-.w-10 {
-  width: 2.5rem;
-}
-
 .w-8 {
   width: 2rem;
 }
@@ -709,39 +693,6 @@ video {
 .animate-pulse {
   -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
           animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@-webkit-keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.animate-bounce {
-  -webkit-animation: bounce 1s infinite;
-          animation: bounce 1s infinite;
 }
 
 .flex-wrap {

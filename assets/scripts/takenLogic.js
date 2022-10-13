@@ -17,7 +17,9 @@ function addEventListeners() {
 function moverFicha(num) {
     const pos = taken1D.indexOf(num);
     const pos0 = taken1D.indexOf(16);
-    if (pos - 4 === pos0 || pos + 4 === pos0 || pos - 1 === pos0 || pos + 1 === pos0) {
+    if (pos - 4 === pos0 || pos + 4 === pos0 || (pos - 1 === pos0 && (pos + 1) % 4 != 1) || (pos + 1 === pos0 && (pos + 1) % 4 != 0)) {
+        console.log(pos)
+        console.log(pos0)
         taken1D[pos] = 16;
         taken1D[pos0] = num;
         updateFichas();
@@ -91,7 +93,6 @@ function initial() {
 
 function playBackgroundMusic() {
     let audio = document.getElementById("ostmoon");
-    audio.play();
     audio.volume = 0.05;
 }
 
