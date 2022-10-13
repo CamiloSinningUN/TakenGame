@@ -18,8 +18,6 @@ function moverFicha(num) {
     const pos = taken1D.indexOf(num);
     const pos0 = taken1D.indexOf(16);
     if (pos - 4 === pos0 || pos + 4 === pos0 || (pos - 1 === pos0 && (pos + 1) % 4 != 1) || (pos + 1 === pos0 && (pos + 1) % 4 != 0)) {
-        console.log(pos)
-        console.log(pos0)
         taken1D[pos] = 16;
         taken1D[pos0] = num;
         updateFichas();
@@ -72,13 +70,17 @@ function buttons() {
         initial();
     });
     volume.addEventListener("click", function () {
-        if (mute) {
+        if (!playingmusic) {
+            playBackgroundMusic();
+            playingmusic = true;
+        } else if (mute) {
             putVolume();
             mute = false;
         } else {
             putVolumeZero();
             mute = true;
         }
+        changeIconVolume();
     });
 }
 
@@ -91,8 +93,18 @@ function initial() {
     }
 }
 
+function changeIconVolume() {
+    let volume = document.getElementById("volume");
+    if (mute) {
+        volume.src = './assets/imgs/noaudio.png';
+    } else {
+        volume.src = './assets/imgs/audio.png';
+    }
+}
+
 function playBackgroundMusic() {
     let audio = document.getElementById("ostmoon");
+    audio.play();
     audio.volume = 0.05;
 }
 
@@ -110,7 +122,7 @@ function putVolumeZero() {
 const fichas = document.querySelectorAll(".ficha");
 var taken1D = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 init()
-playBackgroundMusic()
 var mute = false;
+var playingmusic = false;
 var taken1DBackup = [...taken1D];
 
