@@ -97,29 +97,33 @@
       </div>
       <div class="glass-card p-8">
         <div class="innerBox p-2 flex gap-2 w-[298px] flex-wrap">
-          <div class="ficha"><p>1</p></div>
-          <div class="ficha"><p>2</p></div>
-          <div class="ficha"><p>3</p></div>
-          <div class="ficha"><p>4</p></div>
-          <div class="ficha"><p>5</p></div>
-          <div class="ficha"><p>6</p></div>
-          <div class="ficha"><p>7</p></div>
-          <div class="ficha"><p>8</p></div>
-          <div class="ficha"><p>9</p></div>
-          <div class="ficha"><p>10</p></div>
-          <div class="ficha"><p>11</p></div>
-          <div class="ficha"><p>12</p></div>
-          <div class="ficha"><p>13</p></div>
-          <div class="ficha"><p>14</p></div>
-          <div class="ficha"><p>15</p></div>
-          <div class="ficha invisible"><p>16</p></div>
+          <div class="ficha" id="1"><p>1</p></div>
+          <div class="ficha" id="2"><p>2</p></div>
+          <div class="ficha" id="3"><p>3</p></div>
+          <div class="ficha" id="4"><p>4</p></div>
+          <div class="ficha" id="5"><p>5</p></div>
+          <div class="ficha" id="6"><p>6</p></div>
+          <div class="ficha" id="7"><p>7</p></div>
+          <div class="ficha" id="8"><p>8</p></div>
+          <div class="ficha" id="9"><p>9</p></div>
+          <div class="ficha" id="10"><p>10</p></div>
+          <div class="ficha" id="11"><p>11</p></div>
+          <div class="ficha" id="12"><p>12</p></div>
+          <div class="ficha" id="13"><p>13</p></div>
+          <div class="ficha" id="14"><p>14</p></div>
+          <div class="ficha" id="15"><p>15</p></div>
+          <div class="ficha invisible" id="16"><p>16</p></div>
         </div>
         <div class="absolute flex gap-3 -bottom-7 left-1/2 -translate-x-1/2">
-          <div class="swap rounded-lg p-1 aspect-square hover:cursor-pointer">
+          <div
+            class="swap rounded-lg p-1 aspect-square hover:cursor-pointer"
+            id="newGame"
+          >
             <img src="./assets/imgs/Swap.png" alt="" />
           </div>
           <div
             class="restart rounded-lg p-1 aspect-square hover:cursor-pointer"
+            id="restart"
           >
             <img src="./assets/imgs/Replay.png" alt="" />
           </div>
@@ -132,4 +136,5 @@
       alt=""
     />
   </body>
+  <script src="./assets/scripts/takenLogic.js"></script>
 </html>
