@@ -21,9 +21,11 @@ function moverFicha(num) {
         taken1D[pos] = 16;
         taken1D[pos0] = num;
         updateFichas();
-        checkWin();
-        let audio = document.getElementById("moveSound");
+        let audio = new Audio('./assets/sounds/clap.wav');
         audio.play();
+        audio.volume = 0.25;
+        audio.playbackRate = 1.27
+        checkWin();
     }
 }
 
