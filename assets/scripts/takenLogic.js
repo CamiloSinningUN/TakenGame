@@ -22,6 +22,8 @@ function moverFicha(num) {
         taken1D[pos0] = num;
         updateFichas();
         checkWin();
+        let audio = document.getElementById("moveSound");
+        audio.play();
     }
 }
 
